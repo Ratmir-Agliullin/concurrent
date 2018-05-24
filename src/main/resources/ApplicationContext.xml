@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="firstBean" class="beans.FirstBean">
+        <property name="name" value="first"/>
+    </bean>
+
+    <bean id="singletonBean" class="threads.SingletonBean">
+        <constructor-arg name="count" value="0"/>
+    </bean>
+
+    <bean id="prototypeBean" class="threads.PrototypeBean" scope="prototype">
+        <constructor-arg name="count" value="0"/>
+    </bean>
+</beans>
