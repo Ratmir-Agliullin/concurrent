@@ -13,4 +13,6 @@
     <bean id="prototypeBean" class="threads.PrototypeBean" scope="prototype">
         <constructor-arg name="count" value="0"/>
     </bean>
+
+    <bean id="cacheManager" class="cache.CacheManager" scope="prototype"/>
 </beans>
